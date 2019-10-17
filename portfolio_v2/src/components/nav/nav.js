@@ -5,7 +5,10 @@ import { TiDeviceLaptop } from 'react-icons/ti';
 import { TiDevicePhone } from 'react-icons/ti';
 import { TiSocialGithub } from 'react-icons/ti';
 import { TiSocialLinkedin } from 'react-icons/ti';
+import { TiSocialInstagram } from 'react-icons/ti';
+import { TiSocialFacebook } from 'react-icons/ti';
 import { IconContext } from 'react-icons';
+
 
 
 class Nav extends React.Component {
@@ -18,7 +21,7 @@ class Nav extends React.Component {
           <aside className="">
               <div className="text-center">
               <div className="author-img"><img src={author} alt="author-img"/></div>
-                <h1><a href="index.html">Kevin Lee</a></h1>
+                <h1 className="name"><a href="index.html">Kevin Lee</a></h1>
                 <div className="email"><TiDeviceLaptop /> kevinleehyun@gmail.com</div>
                 <div className="phone-number"><TiDevicePhone /> 562 405-2820</div>
               </div>
@@ -33,8 +36,8 @@ class Nav extends React.Component {
               </nav>
               <nav id="main-menu">
                 <ul>
-                <li><a href="https://www.facebook.com/dhruv.barochia" target="_blank" rel="noopener noreferrer"><i className="icon-facebook2" /></a></li>
-                  <li><a href="https://www.instagram.com/ddbarochiya/" target="_blank" rel="noopener noreferrer"><i className="icon-instagram" /></a></li>
+                <li><a href="https://www.facebook.com/dhruv.barochia" target="_blank" rel="noopener noreferrer"><TiSocialFacebook /></a></li>
+                  <li><a href="https://www.instagram.com/ddbarochiya/" target="_blank" rel="noopener noreferrer"><TiSocialInstagram /></a></li>
                   <li><a href="https://www.linkedin.com/in/dhruv-b-545b52a9/" target="_blank" rel="noopener noreferrer"><TiSocialLinkedin /></a></li>
                   <li><a href="https://github.com/Dhruv34788" target="_blank" rel="noopener noreferrer"><TiSocialGithub/></a></li>
                 </ul>

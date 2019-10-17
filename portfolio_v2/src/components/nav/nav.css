@@ -11,6 +11,7 @@
     -webkit-transition: 0.5s;
     -o-transition: 0.5s;
     transition: 0.5s; 
+    height: 100%
 }
 
 ul {
@@ -37,7 +38,14 @@ a {
     height:1.5em
 }
 
+#navbar{padding-bottom:50px}
+
 #main-menu li{
     text-align:center
 }
 
+.phone-number{
+    padding-bottom:50px
+}
+
+.name{padding-bottom:50px}
