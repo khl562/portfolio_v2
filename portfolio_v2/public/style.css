@@ -3,20 +3,21 @@ body {
     font-weight: 400;
     font-size: 15px;
     line-height: 1.8;
+    letter-spacing: .5px;
     color: rgba(0, 0, 0, 0.7); }
     @media screen and (max-width: 992px) {
       body {
         font-size: 16px; } }
 
 a {
-  color: #2c98f0;
+  color: #2c2c2c;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
-  transition: 0.5s; }
+  transition: 0.5s;}
   a:hover, a:active, a:focus {
     color: #2c98f0;
     outline: none;
-    text-decoration: none !important; }
+    text-decoration: underline !important; }
 
 p {
   margin-bottom: 1.5em; }
@@ -26,4 +27,6 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Playfair Display", Georgia, serif;
   font-weight: 400;
   margin: 0 0 30px 0; }
+
+.text-center{text-align:center}
 

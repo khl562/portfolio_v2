@@ -12,3 +12,32 @@
     -o-transition: 0.5s;
     transition: 0.5s; 
 }
+
+ul {
+    list-style: none;
+    padding: 0
+}
+
+.author-img img{
+    width: 175px
+}
+
+a {
+    color: #2c2c2c;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;}
+    a:hover, a:active, a:focus {
+      color: #2c98f0;
+      outline: none;
+      text-decoration: underline !important; }
+
+.react-icons{
+    width:1.5em;
+    height:1.5em
+}
+
+#main-menu li{
+    text-align:center
+}
+
