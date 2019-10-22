@@ -1,5 +1,8 @@
 import React from 'react';
-import Typed from 'typed.js'
+import Typed from 'typed.js';
+import { TiDownloadOutline } from "react-icons/ti";
+import { IconContext } from 'react-icons';
+import '../index.css';
 
 class TypedReactDemo extends React.Component {
     componentDidMount() {
@@ -10,7 +13,9 @@ class TypedReactDemo extends React.Component {
       const options = {
           strings: strings,
         typeSpeed: 50,
-        backSpeed: 50
+        backSpeed: 50,
+        backDelay: 1500,
+        loop: !0
       };
       // this.el refers to the <span> in the render() method
       this.typed = new Typed(this.el, options);
@@ -25,18 +30,22 @@ class TypedReactDemo extends React.Component {
     render() {
       return (
         <div className="wrap">
-          <h1>Typed.js</h1>
-          <div className="type-wrap">
-            <span
+          <h1 className="head-title fadeInLeft">hi<br></br> i'm kevin</h1>
+          
+          <div className="type-wrap"><span>i am </span>
+            <span 
               style={{ whiteSpace: 'pre' }}
               ref={(el) => { this.el = el; }}
             />
-          </div>
-          <button onClick={() => this.typed.toggle()}>Toggle</button>
+          </div><br></br>
+          <IconContext.Provider value={{ className: 'head-icons' }}>
+          <a href="google.com"><TiDownloadOutline /></a>
+          </IconContext.Provider>
+          {/* <button onClick={() => this.typed.toggle()}>Toggle</button>
           <button onClick={() => this.typed.start()}>Start</button>
           <button onClick={() => this.typed.stop()}>Stop</button>
           <button onClick={() => this.typed.reset()}>Reset</button>
-          <button onClick={() => this.typed.destroy()}>Destroy</button>
+          <button onClick={() => this.typed.destroy()}>Destroy</button> */}
         </div>
       );
     }
