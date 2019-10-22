@@ -2,6 +2,10 @@
     padding-left:350px;
     display:block;
     width: 1500px;
+    clear:both
 }
 
 .about-head{letter-spacing: 10%}
+
+.col{float:left; width: 33.33%; text-align:center}
+.row:after{display: table; clear: both}

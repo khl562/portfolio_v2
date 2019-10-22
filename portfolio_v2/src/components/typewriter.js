@@ -3,7 +3,9 @@ import Typed from 'typed.js';
 import { TiDownloadOutline } from "react-icons/ti";
 import { IconContext } from 'react-icons';
 import '../index.css';
-import 'animate.css'
+import 'animate.css';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 class TypedReactDemo extends React.Component {
     componentDidMount() {
@@ -31,16 +33,16 @@ class TypedReactDemo extends React.Component {
     render() {
       return (
         <div className="wrap">
-          <h1 className="head-title animated fadeInUp delay-.5s">hi<br></br> i'm kevin</h1>
+          <h1 className="head-title" data-aos="fade-up">hi<br></br> i'm kevin</h1>
           
-          <div className="type-wrap animated fadeInUp delay-1s"><span>i am </span>
+          <div className="type-wrap" data-aos="fade-up" data-aos-delay="50"><span>i am </span>
             <span 
               style={{ whiteSpace: 'pre' }}
               ref={(el) => { this.el = el; }}
             />
           </div><br></br>
           <IconContext.Provider value={{ className: 'head-icons' }}>
-          <a href="google.com"><TiDownloadOutline /></a>
+          <div data-aos="fade-up" data-aos-delay="100"><a href="google.com"><TiDownloadOutline /></a></div>
           </IconContext.Provider>
           {/* <button onClick={() => this.typed.toggle()}>Toggle</button>
           <button onClick={() => this.typed.start()}>Start</button>
