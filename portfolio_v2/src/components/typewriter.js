@@ -3,6 +3,7 @@ import Typed from 'typed.js';
 import { TiDownloadOutline } from "react-icons/ti";
 import { IconContext } from 'react-icons';
 import '../index.css';
+import 'animate.css'
 
 class TypedReactDemo extends React.Component {
     componentDidMount() {
@@ -30,9 +31,9 @@ class TypedReactDemo extends React.Component {
     render() {
       return (
         <div className="wrap">
-          <h1 className="head-title fadeInLeft">hi<br></br> i'm kevin</h1>
+          <h1 className="head-title animated fadeInUp delay-.5s">hi<br></br> i'm kevin</h1>
           
-          <div className="type-wrap"><span>i am </span>
+          <div className="type-wrap animated fadeInUp delay-1s"><span>i am </span>
             <span 
               style={{ whiteSpace: 'pre' }}
               ref={(el) => { this.el = el; }}
