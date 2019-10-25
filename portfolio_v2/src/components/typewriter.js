@@ -4,7 +4,7 @@ import { TiDownloadOutline } from "react-icons/ti";
 import { IconContext } from 'react-icons';
 import '../index.css';
 import 'animate.css';
-import AOS from 'aos';
+// import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 class TypedReactDemo extends React.Component {

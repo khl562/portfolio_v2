@@ -1,14 +1,17 @@
 import React from 'react';
 import './about.css';
 import 'animate.css';
-import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { IconContext } from 'react-icons';
+import { TiCodeOutline } from 'react-icons/ti';
+import { TiCloudStorageOutline} from 'react-icons/ti';
+import { TiGroupOutline } from 'react-icons/ti';
 
 class About extends React.Component {
     render() {
         return (
             <div className="about">
-                <div className="about-head" data-aos="fade-right">W H O   I   A M</div>
+                <h3 className="about-head" data-aos="fade-right">W H O   I   A M</h3>
                 <div className="about-body" data-aos="fade-right" data-aos-delay="100">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                 Phasellus fringilla vestibulum vehicula. Ut quis erat ac nisi auctor accumsan nec et ex. Sed massa nunc, posuere eu imperdiet gravida, 
                 mattis quis orci. Nulla ex lacus, tempor sit amet consectetur et, faucibus id mauris. Pellentesque eros turpis, convallis ac posuere et, 
@@ -20,9 +23,40 @@ class About extends React.Component {
                 sodales dui. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</div>
 
                 <div className="what-do row">
-                    <div class="col">fdsafasd</div>
-                    <div class="col">asdfasdf</div>
-                    <div class="col">adsfasdf</div>
+                    <h3 className="what-head" data-aos="fade-right">WHAT I LOVE TO DO</h3>
+                    <div className="col box-item shadow blue" data-aos="fade-up" data-aos-delay="50">
+                        <div className="box-item">
+                            <span className="box-icon"><IconContext.Provider value={{ className: 'browser-icon desc-icons' }}>
+          <div data-aos="fade-up" data-aos-delay="100"><a href="google.com"><TiCodeOutline /></a></div>
+          </IconContext.Provider></span>
+                            <div className="desc">
+                                <h3>Front End Development</h3>
+                                <div className="desc-text">HTML5, CSS3, SASS, Javascript, jQuery, Bootstrap, SEO</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col box-item shadow yellow"  data-aos="fade-up" data-aos-delay="100">
+                    <div className="box-item">
+                            <span className="box-icon"><IconContext.Provider value={{ className: 'server-icon desc-icons' }}>
+          <div data-aos="fade-up" data-aos-delay="150"><a href="google.com"><TiCloudStorageOutline /></a></div>
+          </IconContext.Provider></span>
+                            <div className="desc">
+                                <h3>Databases &amp; Server Side Development</h3>
+                                <div className="desc-text">MySQL, MongoDB, Firebase, AWS, Node,js, Express.js</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col box-item shadow green"  data-aos="fade-up" data-aos-delay="150">
+                    <div className="box-item">
+                            <span className="box-icon"><IconContext.Provider value={{ className: 'manage-icon desc-icons' }}>
+          <div data-aos="fade-up" data-aos-delay="200"><a href="google.com"><TiGroupOutline /></a></div>
+          </IconContext.Provider></span>
+                            <div className="desc">
+                                <h3>Managerial Skils</h3>
+                                <div className="desc-text">Front &amp; Back End Development, UI/UX Development, Documentation, Project Management, CRM</div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         )
