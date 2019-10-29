@@ -33,16 +33,16 @@ class TypedReactDemo extends React.Component {
     render() {
       return (
         <div className="wrap">
-          <h1 className="head-title" data-aos="fade-up">hi<br></br> i'm kevin</h1>
+          <h1 className="head-title" data-aos="fade-up" data-aos-once="true">hi<br></br> i'm kevin</h1>
           
-          <div className="type-wrap" data-aos="fade-up" data-aos-delay="50"><span>i am </span>
+          <div className="type-wrap" data-aos="fade-up" data-aos-delay="50" data-aos-once="true"><span>i am </span>
             <span 
               style={{ whiteSpace: 'pre' }}
               ref={(el) => { this.el = el; }}
             />
           </div><br></br>
           <IconContext.Provider value={{ className: 'head-icons' }}>
-          <div data-aos="fade-up" data-aos-delay="100"><a href="google.com"><TiDownloadOutline /></a></div>
+          <div data-aos="fade-up" data-aos-delay="100" data-aos-once="true"><a href="google.com"><TiDownloadOutline /></a></div>
           </IconContext.Provider>
           {/* <button onClick={() => this.typed.toggle()}>Toggle</button>
           <button onClick={() => this.typed.start()}>Start</button>
